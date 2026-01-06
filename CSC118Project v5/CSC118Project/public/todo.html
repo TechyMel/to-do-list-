@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="todo-wrapper">
+    <div class="todo-card">
+      <div class="todo-header">
+        <h1>To-Do List</h1>
+        <form action="../php/logout.php" method="POST">
+          <button class="btn" type="submit">Logout</button>
+        </form>
+      </div>
+
+      <div class="todo-input-row">
+        <input id="newTodoText" type="text" placeholder="Add a new task...">
+        <button id="addTodoBtn" class="btn" type="button">Add</button>
+      </div>
+
+      <ul id="todoList" class="todo-list"></ul>
+
+      <p id="todoError" class="error-msg"></p>
+    </div>
+  </div>
+</body>
+</html>
