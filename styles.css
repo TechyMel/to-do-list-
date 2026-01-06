@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+}
+
+.auth-body, .homepage-body, .register-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.auth-card, .todo-card, .homepage-card, .form-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  max-width: 400px;
+  width: 100%;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.form-group, .btn-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
+
+.error-msg {
+  color: #b91c1c;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.todo-wrapper {
+  max-width: 600px;
+  margin: 3rem auto;
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-input-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.todo-input-row button.btn {
+  width: auto;
+  padding: 0.7rem 1.2rem;
+}
+
+.todo-input-row input {
+  display: 1;
+  margin: 0;
+}
+
+.todo-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0.5rem 0;
+}
+
+.todo-item.done span {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.todo-actions button {
+  margin-left: 0.3rem;
+}
+
+/* Hua CSS */
+
+.container {
+    height: 150px;
+    width: 400px;
+    margin: 100px auto;
+    background-color: #b89b95;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 3px rgb(10, 20, 10);
+    text-align: center;
+}
+
+#taskInput {
+      height: 20px;  
+    }
+
+
+#addBtn {
+	padding: 2px 8px;
+    height: 25px;
+	cursor: pointer;
+}
+
+ul:hover{
+    cursor:pointer;
+    }
+
+#taskList li{
+    display:flex-start;
+    justify-content:space-between;
+    align-items: center;
+    padding: 5px 0;
+    margin-left:20px;
+}
+
+.done {
+
+    color: green;
+}
+.remove{
+    
+    color: red;
+}
+.completed {
+    
+    text-decoration: line-through;
+    color: gray;
+}
